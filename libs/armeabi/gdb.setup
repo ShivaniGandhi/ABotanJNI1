@@ -1,0 +1,2 @@
+set solib-search-path ./obj/local/armeabi
+directory /opt/android-ndk/platforms/android-14/arch-arm/usr/include /opt/android-ndk/sources/cxx-stl/stlport/stlport /opt/android-ndk/sources/cxx-stl//gabi++/include jni/botan jni/botan_crypto

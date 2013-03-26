@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/pbkdf2_native">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Native"
+        android:id="@+id/pbkdf2_native"
+        android:layout_gravity="bottom"
+        android:onClick="pbkdf2_native"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/pbkdf2_dalvik"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dalvik"
+        android:id="@+id/pbkdf2_dalvik"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="pbkdf2_dalvik"/>
+</RelativeLayout>
+
